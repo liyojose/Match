@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Match.API.V1.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,5 +19,6 @@ namespace Match.API.V1.Data
         }
 
         public virtual DbSet<Value> Values { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
     }
